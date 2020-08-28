@@ -328,6 +328,7 @@ top: 40px;
     z-index: 2;
     height: 294px;
     margin-right: 30px;
+    list-style-type: none;
   }
 
   .work-list .work-items:last-child {
@@ -360,7 +361,7 @@ top: 40px;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    list-style-type: none;
+    
 
   }
 
