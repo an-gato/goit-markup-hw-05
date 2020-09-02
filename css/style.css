@@ -178,7 +178,7 @@ top: 40px;
   .page-title {
    font-family: "Roboto";
    font-style: normal;
-   font-weight: 700;
+   font-weight: 900;
    font-size: 44px;
    line-height: 60px;
    letter-spacing: 0.06em;
@@ -512,22 +512,27 @@ height: 90px;
 cursor: pointer;
 }
 
+
+
+
 .client-item:hover {
   border: 2px solid #2196F3;
-  
 }
+
+.client-item:hover .client-link,
+.client-menu:focus .client-link {
+  fill: #2196F3;
+}
+
 
 
 .client-link {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   fill: #AFB1B8;
+  vertical-align: middle;
 }
 
-.client-link:hover {
-  fill: #2196F3;
-}
+
+
 
 
 .client-main {
@@ -730,14 +735,10 @@ cursor: pointer;
     
 }
 
-
-
-
-
-
 .portfolio-overlay {
    position: relative;
    overflow: hidden;
+   
 }
 
 
@@ -746,6 +747,7 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .container-element {
 margin-right: 30px;
@@ -776,9 +778,6 @@ cursor: pointer;
 
 }
 
-.port-link {
-  text-decoration: none;
-}
 
 .port-main {
   position: absolute;
@@ -813,7 +812,7 @@ cursor: pointer;
     opacity: 1;
     transition: opacity 0.3s;
     transition: 250ms; 
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   }
 
